@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import gym from "../../Assets/Projects/gym.jpeg";
+import gender from "../../Assets/Projects/gender.jpg";
+import face from "../../Assets/Projects/download.jpeg";
+import spectre from "../../Assets/Projects/Spectre.png";
+import Jewel from "../../Assets/Projects/jewel.png";
+import covid from "../../Assets/Projects/covid.jpeg";
+import scrumble from "../../Assets/Projects/scrumble.jpg";
+import rice from "../../Assets/Projects/ricesam2.jpeg";
 
 function Projects() {
   return (
@@ -23,68 +25,117 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={spectre}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Spectre-FYP"
+              description="SPECTRE is basically to upgrade the security system by making them intelligent using computer vision. It would be capable of identifying these suspicious activities using different deep learning algorithms and recognizing the face using an attached database."
+              demoLink="https://sites.google.com/view/mpvir/video-analytics/spectre"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={face}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Integrated Face Recognition and sentiment analysis in React"
+              description="Implemented code in python of FAST API
+              For sentiment Analysis:
+              o It takes an array of comments of user and used pretrained model and library to get three classes
+              of comment i.e., positive, negative, and neutral.
+              For Face Recognition:
+              o It takes an image of user and take images of currently logged in user image from mongo DB and
+              compare the extracted features."
+              demoLink="https://drive.google.com/file/d/1N5A5K7gqb1eYIDKggz-JvdGynLCUxHFn/view?usp=drive_link"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={scrumble}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Scramble Puzzle Solver"
+              description="Scrambled Word Puzzle Solver using image processing techniques and ML models.
+              Image processing and segmentation using OpenCV and Python
+              Used three Different features extractors ORB, SIFT, HOG
+              Trained EMNIST Characters Dataset on SVM, KNN, Naive Bayes classifiers
+              Generated accuracy plots and achieved 95% accuracy"
+              ghLink="https://github.com/chaudhary121/Scrumble_puzzle_solver_using_ML_and_DIP"
+              demoLink="https://drive.google.com/drive/folders/1hb1MQnNt7zsA1AQEwB7HSFfP5vVllu8i?usp=drive_link"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={covid}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Covid image Classification using DecisionTree with- PYQT5 UI"
+              description="
+              Developed small desktop Application in pyQt5.Allows user to add image.
+              Shows result against image using trained model."
+              ghLink="https://github.com/aliahmadarshad2/Covid_image_Classification-using-DecisionTree-with-PYQT5UI-Complete-Machinelearning-Project"
+              demoLink="https://drive.google.com/file/d/14AAAx3acldGbAyfHkikstJ4e3LtpEykL/view?usp=drive_link"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={gym}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="GYM System web Application"
+              description="Developed Application that allows user to authorize and authenticate.
+              Performed complete CRUD
+              Learned React.js and REST API , Mongo CRUD, HTML CS"
+              ghLink="https://github.com/aliahmadarshad2/GymSystem-react-app"
+              demoLink="https://drive.google.com/file/d/1RdCK-oBoq-uRfMCVlMoBgtiWWTgg8N-v/view?usp=drive_link"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={scrumble}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
+              title="Maze-Game-and-Puzzle-using-Astar-algorithm"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              ghLink="https://github.com/aliahmadarshad2/Maze-Game-and-Puzzle-using-Astar-algorithm"
+              demoLink="https://drive.google.com/file/d/1hNn9r01KSl6C2ecYLVrz59dHhqirXchv/view?usp=drive_link"   
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Jewel}
+              isBlog={false}
+              title="Jewelry selling Android APP in React Native"
+              description="Developed Application that allows user to authorize and authenticate using Firebase.
+              Allows users to add post for selling.
+              Allows users to buy any product.
+              Performed complete CRUD
+              Learned about Firebase"
+              ghLink="https://github.com/aliahmadarshad2/Jewelery_Selling_Application_in_React-Native"
+              demoLink="https://drive.google.com/file/d/1xnVBJ__stiStQvZeXoW_BJfS9-pYGUPq/view?usp=drive_link"  
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gender}
+              isBlog={false}
+              title="Gender Classification using KNN and Perceptron with- Tkinter UI"
+              description="Developed small desktop Application in Tkinter.
+              Allows user to add all the entries in fields.
+              Shows result against entries using trained models."
+              demoLink="https://drive.google.com/drive/folders/1s2EBYqTosRq6sUGdxuuPQgE8XGfjhtFj"     
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rice}
+              isBlog={false}
+              title="Calculating no.of largest length smallest length and total number of rice in python using DIP concepts"
+              description="Applying thresholding, Finding contours
+              Based on contours, smallest values and largest values determined smallest and largest length of gain and
+              total no of grains."
+              ghLink="https://github.com/aliahmadarshad2/Rice-Grains-count-using-DIP"
+              demoLink="https://drive.google.com/drive/folders/1LFrTAaEUhABlTad1DkDNgLr8s4hULXdy"  
             />
           </Col>
         </Row>
