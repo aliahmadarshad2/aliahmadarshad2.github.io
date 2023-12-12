@@ -1,18 +1,89 @@
 
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col ,Button } from "react-bootstrap";
 import { ImPointRight } from "react-icons/im";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import fyp from "../../Assets/fyp.jpeg";
 import fyp1 from "../../Assets/fyp1.jpg";
 import fyp2 from "../../Assets/fyp2.jpg";
 import ehsas from "../../Assets/ehsas.png";
 import cert from "../../Assets/cert.jpg";
 import seed from "../../Assets/seed.png";
+import standing from "../../Assets/standingconv.jpeg";
+import getting from "../../Assets/getting.jpeg";
+import medal from "../../Assets/medal.jpeg";
+import zoom from "../../Assets/zoomcon.JPG";
+import degree from "../../Assets/receivingdegree.JPG";
 function achievement() {
   return (
     <Container fluid className="home-section" id="home">
       <Container className="home-content">
+      <Row>
+          <Col md={3}>
+            <blockquote className="blockquote mb-0">
+              <p style={{ textAlign: "justify" }}>
+                Humbled to be the <span className="purple"> Gold Medalist 🥇</span> in Bachelor of computer science with the cgpa of 3.65 from <span className="purple">COMSAT UNIVERSITY LAHORE. </span>
+
+              </p>
+
+            </blockquote>
+            <br/>
+          
+        <img
+              src={medal}
+              alt="home pic"
+              className="img-fluid"
+              style={{ height: "200px" }}
+            />
+            
+
+
+          </Col>
+
+          <Col md={3} style={{ paddingBottom: 20 }}>
+            <img
+              src={standing}
+              alt="home pic"
+              className="img-fluid"
+              style={{ maxHeight: "450px" }}
+            />
+          </Col>
+          <Col md={3}>
+            <blockquote className="blockquote mb-0">
+            <img
+                src={degree}
+                alt="home pic"
+                className="img-fluid"
+                style={{ height: "200px" ,width:"400px" }}
+              />
+              <br />
+              <img
+                src={zoom}
+                alt="home pic"
+                className="img-fluid"
+                style={{ height: "200px" ,width:"400px" }}
+              />
+
+            </blockquote>
+
+          </Col>
+          <Col md={3} style={{ paddingBottom: 20 }}>
+
+            <img
+              src={getting}
+              alt="home pic"
+              className="img-fluid"
+              style={{ height: "400px" }}
+            />
+            
+          </Col>
+          <Col md={3} style={{ paddingBottom: 20 }}>
+
+            
+            
+          </Col>
+          
+        </Row>
         <Row>
           <Col md={3}>
             <blockquote className="blockquote mb-0">

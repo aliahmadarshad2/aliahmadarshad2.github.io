@@ -25,6 +25,7 @@ function About() {
               Know Who <strong className="purple">I'M</strong>
             </h1>
             <Aboutcard />
+            
           </Col>
           <Col
             md={5}
@@ -33,6 +34,7 @@ function About() {
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
+          
         </Row>
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
